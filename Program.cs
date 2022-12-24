@@ -10,3 +10,21 @@
 // ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
+
+// Этап 1: "Сформировали массив с клавиатуры"
+
+Console.Write("Какого размера будет массив? ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] finalArray = new string[size];
+
+
+string[] MakeArray(string[] array)
+{
+    for (int i = 0; i < size; i++)
+    {
+        Console.WriteLine($"Введите элемент {i + 1}: ");
+        string MakeElement = Convert.ToString(Console.ReadLine());
+        array[i] = MakeElement;
+    }
+    return array;
+}
