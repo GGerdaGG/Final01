@@ -22,7 +22,7 @@ string[] MakeArray(string[] array)
 {
     for (int i = 0; i < size; i++)
     {
-        Console.WriteLine($"Введите элемент {i + 1}: ");
+        Console.Write($"Введите элемент {i + 1}: ");
         string MakeElement = Convert.ToString(Console.ReadLine());
         array[i] = MakeElement;
     }
@@ -63,7 +63,7 @@ string[] ChooseElements(string[] finArray)
 
 
 PrintArray(MakeArray(finalArray));
-Console.Write("=>");
+Console.Write("->");
 PrintArray(ChooseElements(finalArray));
 
 
