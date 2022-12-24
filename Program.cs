@@ -41,3 +41,27 @@ void PrintArray(string[] arr)
     }
     Console.Write("]");
 }
+
+// Этап 3: "Выбрали элементы соответствущие условию"
+
+string[] ChooseElements(string[] finArray)
+{
+    int size = 0;
+    for (int i = 0; i < finArray.Length; i++)
+    {
+        if (finArray[i].Length <= 3) size++;
+    }
+    string[] finArray2 = new string[size];
+    int k = 0;
+    for (int i = 0; i < finArray.Length; i++)
+    {
+        if (finArray[i].Length <= 3)
+            finArray2[k++] = finArray[i];
+    }
+    return finArray2;
+}
+
+
+PrintArray(MakeArray(finalArray));
+Console.Write("=>");
+PrintArray(ChooseElements(finalArray));
