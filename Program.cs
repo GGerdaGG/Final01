@@ -65,3 +65,28 @@ string[] ChooseElements(string[] finArray)
 PrintArray(MakeArray(finalArray));
 Console.Write("=>");
 PrintArray(ChooseElements(finalArray));
+
+
+
+//Другой способ с выводом соответствующих условию элементов, но без массива
+
+// string[] final = { "hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Sunday", "Russian", "Denmark", "Kazan" };
+
+// string[] ChooseElements(string[] fin)
+// {
+//     string[] arrayFinal = new string[fin.GetLength(0)];
+
+//     for (int i = 0; i < fin.GetLength(0); i++)
+//     {
+//         if (fin[i].Length <= 3)
+//         {
+//             Console.WriteLine($"Элемент длина которого меньше либо равна 3 символа: {fin[i]}");
+//         }
+//     }
+//     return arrayFinal;
+// }
+
+// ChooseElements(final);
+
+
+
